@@ -1,20 +1,14 @@
+# Zaheer Khan Portfolio 👨‍💻
 
-# Zaheer Khan
+Welcome to my portfolio! I am Zaheer Khan, a self-taught developer and founder of CodxMan & Zk Creation. I am currently working as an Associate Software Engineer at Fexle and have previously interned as a web developer at Hostlelo. I enjoy building products from scratch and am passionate about every aspect of the development process, from brainstorming to marketing.
+## 🛠️ Tech Stack
 
-It's a porfolio of Zaheer Khan (zk)
+The website is built using the following technologies:
 
+    HTML 🌐
+    CSS 🎨
+    JavaScript 🚀
 
-## 🚀 About Me
-Hello! I am Zaheer khan. Founder of CodxMan & Zk Creation| Developer | .
+## 🚀 Demo
 
-Associate software engineer @Fexle | Ex - Web Developer(Intern) @Hostlelo | Self-taught developer who loves building products from scratch. From brainstorming designing coding to marketing I love every bit of it.
-
-## Tech Stack
-
-HTML, CSS, JavaScript 
-
-
-## Demo
-
-[Click me](https://zaheer-zk.github.io/Advanced-porfolio/)
-
+You can check out the live demo of my portfolio [here](http://zaheer-zk.github.io/Advanced-porfolio/). Feel free to explore and get in touch with me for any queries or collaborations! 😃
