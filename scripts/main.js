@@ -91,11 +91,15 @@ $(document).ready(function () {
   }); // initialize animate on scroll library
 });
 
-// Close the slide-out menu after any nav link is clicked
+// Move the active highlight + close the slide-out menu on nav click
 $('.nav__list-item a').on('click', function () {
+  // highlight the clicked item like "home"
+  $('.nav__list-item').removeClass('active-nav');
+  $(this).closest('.nav__list-item').addClass('active-nav');
+  // close the hamburger menu
   $('body').removeClass('nav-active');
-  var href = $(this).attr('href');
   // "home" link has no smooth-scroll class — scroll to top
+  var href = $(this).attr('href');
   if (href === '#' || href === '') {
     $('html, body').animate({ scrollTop: 0 }, 800);
   }
