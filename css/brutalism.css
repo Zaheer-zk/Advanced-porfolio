@@ -420,6 +420,8 @@ body.light .cursor2 {
 /* ---- Github avatar badge ------------------------------------------------- */
 
 .link-to-portfolio {
+  left: auto !important;
+  right: 50px !important;
   border-radius: 0 !important;
   border: var(--bru-border) !important;
   box-shadow: var(--bru-shadow-sm) !important;
