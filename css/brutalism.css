@@ -1,0 +1,474 @@
+/* ==========================================================================
+   NEO-BRUTALISM THEME OVERRIDE
+   Loaded last — intentionally aggressive with !important to beat the
+   high-specificity vendor styles (bootstrap, now-ui-kit, main.css).
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --bru-ink: #000000;
+  --bru-paper: #f4f0e6;
+  --bru-card: #ffffff;
+  --bru-yellow: #ffd400;
+  --bru-pink: #ff5da2;
+  --bru-cyan: #36d3ff;
+  --bru-lime: #b6ff3a;
+  --bru-purple: #b08bff;
+  --bru-shadow: 8px 8px 0 var(--bru-ink);
+  --bru-shadow-sm: 4px 4px 0 var(--bru-ink);
+  --bru-shadow-lg: 12px 12px 0 var(--bru-ink);
+  --bru-border: 3px solid var(--bru-ink);
+  --bru-border-thick: 4px solid var(--bru-ink);
+}
+
+/* ---- Base ---------------------------------------------------------------- */
+
+body,
+body.light {
+  background-color: var(--bru-paper) !important;
+  background-image:
+    radial-gradient(var(--bru-ink) 1.4px, transparent 1.4px);
+  background-size: 26px 26px;
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: var(--bru-ink) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.heading-primary,
+.heading-sec__main {
+  font-family: 'Archivo Black', 'Space Grotesk', sans-serif !important;
+  letter-spacing: -0.5px;
+  color: var(--bru-ink) !important;
+}
+
+::selection {
+  background: var(--bru-pink);
+  color: #000;
+}
+
+/* ---- Header / logo ------------------------------------------------------- */
+
+.cd-header {
+  background: var(--bru-yellow) !important;
+  border-bottom: var(--bru-border-thick) !important;
+}
+
+.logo-wrap a,
+body.light .logo-wrap a {
+  font-family: 'Archivo Black', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #000 !important;
+  letter-spacing: -0.5px;
+}
+.logo-wrap a span {
+  background: #000;
+  color: var(--bru-yellow);
+  padding: 0 6px;
+  margin-right: 4px;
+}
+
+.menu-icon {
+  background: #fff;
+  border: var(--bru-border);
+  box-shadow: var(--bru-shadow-sm);
+  padding: 14px 12px !important;
+}
+.menu-icon__line,
+body.light .menu-icon__line {
+  background-color: #000 !important;
+  height: 3px !important;
+}
+
+/* ---- Slide-out nav ------------------------------------------------------- */
+
+.nav:before,
+.nav:after,
+body.light .nav:before,
+body.light .nav:after {
+  background: var(--bru-cyan) !important;
+}
+
+.nav__list-item a,
+body.light .nav__list-item a {
+  font-family: 'Archivo Black', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #000 !important;
+  -webkit-text-stroke: 0 !important;
+  transition: transform 0.15s ease;
+}
+.nav__list-item a:hover,
+body.light .nav__list-item a:hover {
+  color: #000 !important;
+  background: var(--bru-yellow);
+  box-shadow: var(--bru-shadow-sm);
+  padding: 0 10px;
+  transform: translate(-2px, -2px);
+}
+.nav__list-item.active-nav a,
+body.light .nav__list-item.active-nav a {
+  background: var(--bru-pink);
+  box-shadow: var(--bru-shadow-sm);
+  padding: 0 10px;
+}
+
+/* ---- Hero ---------------------------------------------------------------- */
+
+.switch-wrap h1,
+body.light .switch-wrap h1 {
+  font-family: 'Archivo Black', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #000 !important;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  max-width: 900px;
+  margin: 1.4rem auto;
+  display: inline-block;
+  background: var(--bru-yellow);
+  border: var(--bru-border-thick);
+  box-shadow: var(--bru-shadow);
+  padding: 14px 22px;
+}
+
+.cc-profile-image img {
+  border: var(--bru-border-thick) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow-lg) !important;
+  background: var(--bru-cyan);
+}
+
+/* light/dark toggle switch */
+#switch {
+  border: var(--bru-border) !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  box-shadow: var(--bru-shadow-sm);
+  width: 60px !important;
+}
+#circle {
+  border-radius: 0 !important;
+  background: var(--bru-pink) !important;
+}
+.switch-wrap p span {
+  font-family: 'Space Mono', monospace !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ---- Section titles ------------------------------------------------------ */
+
+.title,
+.h4.title,
+.heading-sec__main {
+  display: inline-block;
+  text-transform: uppercase !important;
+  background: #000 !important;
+  color: #fff !important;
+  padding: 8px 18px !important;
+  border: var(--bru-border-thick);
+  box-shadow: var(--bru-shadow-sm);
+}
+.heading-sec__sub {
+  font-family: 'Space Mono', monospace !important;
+  color: #000 !important;
+  background: var(--bru-lime);
+  display: inline-block;
+  padding: 6px 12px;
+  border: var(--bru-border);
+  margin-top: 14px;
+}
+
+/* keep section titles that are styled inline black readable */
+.title[style],
+.h4.title[style] {
+  color: #fff !important;
+}
+
+/* ---- Cards --------------------------------------------------------------- */
+
+.card {
+  background: var(--bru-card) !important;
+  border: var(--bru-border-thick) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow) !important;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: var(--bru-shadow-lg) !important;
+}
+
+.card-body p,
+.card-body .row div {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* basic-info / about labels */
+.text-uppercase {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+}
+
+/* ---- Experience accent column ------------------------------------------- */
+
+.bg-primary,
+.col-md-3.bg-primary {
+  background: var(--bru-pink) !important;
+  background-image: none !important;
+  border-right: var(--bru-border-thick);
+  color: #000 !important;
+}
+.cc-experience-header p,
+.cc-education-header p {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700;
+  color: #000 !important;
+}
+.cc-experience .card:nth-child(2n) .bg-primary { background: var(--bru-cyan) !important; }
+.cc-experience .card:nth-child(3n) .bg-primary { background: var(--bru-yellow) !important; }
+.cc-education .card:nth-child(2n) .bg-primary { background: var(--bru-lime) !important; }
+
+/* ---- Skills progress bars ----------------------------------------------- */
+
+.progress-badge {
+  font-family: 'Space Mono', monospace !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+.progress {
+  height: 26px !important;
+  background: #fff !important;
+  border: var(--bru-border) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow-sm) !important;
+  overflow: visible;
+}
+.progress-bar,
+.progress-bar-primary {
+  background: var(--bru-yellow) !important;
+  background-image: none !important;
+  border-right: var(--bru-border) !important;
+  border-radius: 0 !important;
+}
+.progress-container:nth-child(1) .progress-bar { background: var(--bru-pink) !important; }
+.progress-value {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+
+/* ---- Project rows -------------------------------------------------------- */
+
+.projects__row-img-cont {
+  border: var(--bru-border-thick);
+  box-shadow: var(--bru-shadow);
+  background: var(--bru-card);
+}
+.projects__row-img {
+  border-radius: 0 !important;
+}
+.projects__row-content-title {
+  text-transform: uppercase !important;
+}
+.projects__row-content-desc {
+  font-family: 'Space Grotesk', sans-serif !important;
+  color: #000 !important;
+}
+
+/* ---- Skill tags (case-study) -------------------------------------------- */
+
+.skills__skill {
+  font-family: 'Space Mono', monospace !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  background: var(--bru-lime) !important;
+  color: #000 !important;
+  border: var(--bru-border) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow-sm) !important;
+  padding: 8px 12px !important;
+}
+.skills__skill:nth-child(2n) { background: var(--bru-cyan) !important; }
+.skills__skill:nth-child(3n) { background: var(--bru-yellow) !important; }
+.skills__skill:nth-child(4n) { background: var(--bru-pink) !important; }
+
+/* ---- Achievements -------------------------------------------------------- */
+
+#achievements .col-md-4 .card-body {
+  border: var(--bru-border);
+  box-shadow: var(--bru-shadow-sm);
+  margin: 10px;
+  background: var(--bru-card);
+  transition: transform 0.15s ease;
+}
+#achievements .col-md-4:nth-child(1) .card-body { background: var(--bru-yellow); }
+#achievements .col-md-4:nth-child(2) .card-body { background: var(--bru-cyan); }
+#achievements .col-md-4:nth-child(3) .card-body { background: var(--bru-pink); }
+#achievements .col-md-4 .card-body:hover { transform: translate(-3px, -3px); }
+#achievements i { color: #000 !important; }
+#achievements .h5 { text-transform: uppercase; }
+
+/* ---- Buttons ------------------------------------------------------------- */
+
+.btn,
+.btn-primary,
+.button-30,
+.button-29,
+.btn-grad,
+a.btn-grad {
+  font-family: 'Archivo Black', sans-serif !important;
+  text-transform: uppercase !important;
+  background: var(--bru-yellow) !important;
+  background-image: none !important;
+  color: #000 !important;
+  border: var(--bru-border) !important;
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow-sm) !important;
+  padding: 12px 22px !important;
+  transition: transform 0.12s ease, box-shadow 0.12s ease !important;
+}
+.btn:hover,
+.btn-primary:hover,
+.button-30:hover,
+.button-29:hover,
+.btn-grad:hover,
+a.btn-grad:hover {
+  transform: translate(-3px, -3px) !important;
+  box-shadow: var(--bru-shadow) !important;
+  background: var(--bru-pink) !important;
+  color: #000 !important;
+}
+.button-29 { background: #fff !important; }
+.btn-grad { background: var(--bru-cyan) !important; }
+
+/* social icon buttons */
+.btn-link {
+  background: #fff !important;
+  border: var(--bru-border) !important;
+  box-shadow: var(--bru-shadow-sm) !important;
+  padding: 8px 14px !important;
+  margin: 6px !important;
+  display: inline-block;
+}
+.btn-link i { color: #000 !important; }
+.btn-link:hover { background: var(--bru-yellow) !important; }
+
+/* ---- Contact / form ------------------------------------------------------ */
+
+.cc-contact-information {
+  background-image: none !important;
+  background: var(--bru-purple) !important;
+  border-top: var(--bru-border-thick);
+  border-bottom: var(--bru-border-thick);
+}
+.form-control {
+  border: var(--bru-border) !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  font-family: 'Space Mono', monospace !important;
+  box-shadow: inset 2px 2px 0 rgba(0,0,0,0.08);
+}
+.form-control:focus {
+  box-shadow: var(--bru-shadow-sm) !important;
+  border-color: #000 !important;
+}
+.input-group-addon {
+  border: var(--bru-border) !important;
+  border-right: none !important;
+  border-radius: 0 !important;
+  background: var(--bru-yellow) !important;
+}
+
+/* ---- Footer -------------------------------------------------------------- */
+
+.footer {
+  background: #000 !important;
+  border-top: var(--bru-border-thick);
+  color: #fff !important;
+  padding: 30px 0;
+}
+.footer .title,
+.footer .h4.title {
+  background: var(--bru-yellow) !important;
+  color: #000 !important;
+}
+.footer .btn-link { background: #fff !important; }
+
+/* ---- Custom cursor: sharpen --------------------------------------------- */
+
+.cursor2,
+.cursor3,
+body.light .cursor2 {
+  border-radius: 0 !important;
+}
+
+/* ---- Github avatar badge ------------------------------------------------- */
+
+.link-to-portfolio {
+  border-radius: 0 !important;
+  border: var(--bru-border) !important;
+  box-shadow: var(--bru-shadow-sm) !important;
+}
+.link-to-portfolio:hover {
+  border-radius: 0 !important;
+  box-shadow: var(--bru-shadow) !important;
+  transform: translate(-2px, -2px);
+}
+
+/* ==========================================================================
+   DARK MODE  (body loses .light class; sections gain .switched)
+   ========================================================================== */
+
+body:not(.light) {
+  background-color: #0e0e0e !important;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.18) 1.4px, transparent 1.4px);
+  color: #fff !important;
+}
+body:not(.light) h1,
+body:not(.light) h2,
+body:not(.light) h3,
+body:not(.light) .heading-sec__main { color: #fff !important; }
+
+body:not(.light) .card {
+  background: #1a1a1a !important;
+  border-color: #fff !important;
+  box-shadow: 8px 8px 0 var(--bru-cyan) !important;
+}
+body:not(.light) .card:hover { box-shadow: 12px 12px 0 var(--bru-cyan) !important; }
+
+body:not(.light) .title,
+body:not(.light) .h4.title {
+  background: var(--bru-yellow) !important;
+  color: #000 !important;
+  border-color: #fff;
+  box-shadow: 4px 4px 0 #fff;
+}
+body:not(.light) .card-body p,
+body:not(.light) .projects__row-content-desc,
+body:not(.light) .col-sm-8,
+body:not(.light) .card-body .row div { color: #fff !important; }
+body:not(.light) .card-body a { color: var(--bru-cyan) !important; }
+
+body:not(.light) .progress { background: #000 !important; border-color: #fff !important; }
+body:not(.light) .projects__row-img-cont { border-color: #fff; box-shadow: 8px 8px 0 var(--bru-pink); }
+body:not(.light) .heading-sec__sub { color: #000 !important; }
+
+body:not(.light) .switch-wrap h1 {
+  background: var(--bru-pink) !important;
+  border-color: #fff;
+  box-shadow: 8px 8px 0 #fff;
+}
+
+/* ---- Responsive ---------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .switch-wrap h1,
+  body.light .switch-wrap h1 { font-size: 2.1rem; padding: 10px 14px; }
+  :root {
+    --bru-shadow: 5px 5px 0 var(--bru-ink);
+    --bru-shadow-lg: 7px 7px 0 var(--bru-ink);
+  }
+}

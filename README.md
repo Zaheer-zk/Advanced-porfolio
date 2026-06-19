@@ -1,6 +1,6 @@
 # Zaheer Khan Portfolio 👨‍💻
 
-Welcome to my portfolio! I am Zaheer Khan, a self-taught developer and founder of CodxMan & Zk Creation. I am currently working as an Associate Software Engineer at Fexle and have previously interned as a web developer at Hostlelo. I enjoy building products from scratch and am passionate about every aspect of the development process, from brainstorming to marketing.
+Welcome to my portfolio! I am Zaheer Khan, a Senior Full Stack Developer with 5+ years of experience building scalable web applications, REST APIs, and high-performance user interfaces. I am currently a Senior Software Development Engineer at TAMM (EDGE Corporation) in Abu Dhabi, with strong expertise in JavaScript, TypeScript, React, Next.js, Node.js, NestJS, SQL, MongoDB, AWS, and Docker.
 ## 🛠️ Tech Stack
 
 The website is built using the following technologies:
