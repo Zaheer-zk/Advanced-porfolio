@@ -120,15 +120,20 @@ body.light .switch-wrap h1 {
   font-family: 'Archivo Black', sans-serif !important;
   text-transform: uppercase !important;
   color: #000 !important;
-  font-size: 3.2rem;
-  line-height: 1.05;
-  max-width: 900px;
-  margin: 1.4rem auto;
+  font-size: clamp(20px, 4.4vw, 44px) !important;
+  line-height: 1.08 !important;
+  max-width: min(900px, 90vw) !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  box-sizing: border-box !important;
+  margin: 1.4rem auto !important;
   display: inline-block;
+  overflow-wrap: break-word;
+  word-break: normal;
   background: var(--bru-yellow);
   border: var(--bru-border-thick);
   box-shadow: var(--bru-shadow);
-  padding: 14px 22px;
+  padding: 14px clamp(12px, 2.5vw, 22px) !important;
 }
 
 .cc-profile-image img {
@@ -493,8 +498,6 @@ body:not(.light) #achievements .card-body * {
 /* ---- Responsive ---------------------------------------------------------- */
 
 @media (max-width: 768px) {
-  .switch-wrap h1,
-  body.light .switch-wrap h1 { font-size: 2.1rem; padding: 10px 14px; }
   :root {
     --bru-shadow: 5px 5px 0 var(--bru-ink);
     --bru-shadow-lg: 7px 7px 0 var(--bru-ink);
