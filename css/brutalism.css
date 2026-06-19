@@ -65,8 +65,12 @@ body.light .logo-wrap a {
 .logo-wrap a span {
   background: #000;
   color: var(--bru-yellow);
-  padding: 0 6px;
+  padding: 3px 16px;
   margin-right: 4px;
+  display: inline-block;
+  /* pinch left-center inward (>) and right-center inward (<) */
+  -webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 9px) 50%, 100% 100%, 0 100%, 9px 50%);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 9px) 50%, 100% 100%, 0 100%, 9px 50%);
 }
 
 .menu-icon {
