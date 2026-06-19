@@ -77,7 +77,8 @@ body.light .logo-wrap a {
   background: #fff;
   border: var(--bru-border);
   box-shadow: var(--bru-shadow-sm);
-  padding: 14px 12px !important;
+  box-sizing: content-box !important;
+  padding: 9px !important;
 }
 .menu-icon__line,
 body.light .menu-icon__line {
