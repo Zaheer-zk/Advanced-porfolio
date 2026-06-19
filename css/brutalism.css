@@ -143,13 +143,16 @@ body.light .switch-wrap h1 {
   background: var(--bru-cyan);
 }
 
-/* light/dark toggle switch */
+/* light/dark toggle switch — force centred */
+.switch-wrap { text-align: center !important; }
 #switch {
   border: var(--bru-border) !important;
   border-radius: 0 !important;
   background: #fff !important;
   box-shadow: var(--bru-shadow-sm);
   width: 60px !important;
+  display: block !important;
+  margin: 16px auto !important;
 }
 #circle {
   border-radius: 0 !important;
