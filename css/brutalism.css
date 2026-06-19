@@ -462,6 +462,34 @@ body:not(.light) .switch-wrap h1 {
   box-shadow: 8px 8px 0 #fff;
 }
 
+/* Legibility: lighten headings / labels / values sitting on dark surfaces */
+body:not(.light) .card-body,
+body:not(.light) .card-body li,
+body:not(.light) .card-body .h5,
+body:not(.light) .card-body h5,
+body:not(.light) .card-body h4,
+body:not(.light) .card-body h3,
+body:not(.light) .card-body .text-uppercase,
+body:not(.light) .progress-badge,
+body:not(.light) .progress-value,
+body:not(.light) .projects__row-content-title {
+  color: #fff !important;
+}
+
+/* Re-assert BLACK text on accent-coloured blocks (these stay colourful) */
+body:not(.light) .bg-primary,
+body:not(.light) .bg-primary *,
+body:not(.light) .cc-experience-header *,
+body:not(.light) .cc-education-header *,
+body:not(.light) .title,
+body:not(.light) .h4.title,
+body:not(.light) .heading-sec__sub,
+body:not(.light) .skills__skill,
+body:not(.light) #achievements .card-body,
+body:not(.light) #achievements .card-body * {
+  color: #000 !important;
+}
+
 /* ---- Responsive ---------------------------------------------------------- */
 
 @media (max-width: 768px) {
