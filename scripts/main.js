@@ -91,6 +91,16 @@ $(document).ready(function () {
   }); // initialize animate on scroll library
 });
 
+// Close the slide-out menu after any nav link is clicked
+$('.nav__list-item a').on('click', function () {
+  $('body').removeClass('nav-active');
+  var href = $(this).attr('href');
+  // "home" link has no smooth-scroll class — scroll to top
+  if (href === '#' || href === '') {
+    $('html, body').animate({ scrollTop: 0 }, 800);
+  }
+});
+
 // Smooth scroll for links with hashes
 $('a.smooth-scroll').click(function (event) {
   // On-page links
