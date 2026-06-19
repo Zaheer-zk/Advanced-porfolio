@@ -12,7 +12,7 @@
 
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/brutalism.css" rel="stylesheet">
-    <link href="css/fifa.css" rel="stylesheet">
+    <link href="css/fifa.css?ver=1.1.0" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/781907cb90.js" crossorigin="anonymous"></script>
     
@@ -554,6 +554,33 @@
   </div>
 </div>
 
+  <!-- Score a Goal mini-game -->
+<div class="section " id="goal-game">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Score a Goal ⚽</div>
+    <div class="card">
+      <div class="card-body">
+        <div class="game-scoreboard">
+          <span>GOALS: <b id="gameGoals">0</b></span>
+          <span>SHOTS: <b id="gameShots">0</b></span>
+          <span id="gameMsg" class="game-msg">PICK A CORNER &amp; SHOOT!</span>
+        </div>
+        <div class="game-pitch" id="gamePitch">
+          <div class="game-goal">
+            <span class="game-keeper" id="gameKeeper">🧤</span>
+          </div>
+          <div class="game-ball" id="gameBall">⚽</div>
+        </div>
+        <div class="game-controls">
+          <button type="button" class="btn game-shoot-btn" data-dir="left">⬅ LEFT</button>
+          <button type="button" class="btn game-shoot-btn" data-dir="center">SHOOT</button>
+          <button type="button" class="btn game-shoot-btn" data-dir="right">RIGHT ➡</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Contact -->
 <div class="section " id="contact">
   <div class="cc-contact-information" style="background-image: url('images/staticmap-1.png')">
@@ -650,7 +677,7 @@
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.2"></script>
-    <script src="js/fifa.js?ver=1.0.0"></script>
+    <script src="js/fifa.js?ver=1.1.0"></script>
     
     <!-- Start of Tawk.to Script-->
 <!-- <script type="text/javascript">
